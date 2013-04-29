@@ -7,7 +7,7 @@ import os, sys, urllib2, argparse
 
 class App:
 
-  def __init__(self):
+	def __init__(self):
 		parser = argparse.ArgumentParser(description="Open Web App Runner")
 		parser.add_argument("url", help="URL for the App without protocol")
 		parser.add_argument("murl", nargs="?", help="Relative route for the manifest file (usually something like '/appname.webapp')")
@@ -44,8 +44,8 @@ class App:
 		self.window.add(self.view)
 		self.window.show_all()
 		self.window.connect('destroy', lambda w: Gtk.main_quit())
-
-	def appLoad(self, url):	
+	
+	def appLoad(self, url):
 		manifest = None
 		try:
 			response = urllib2.urlopen(self.url.scheme + "://" + self.url.netloc + self.murl)
