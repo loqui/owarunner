@@ -25,3 +25,7 @@ Some test apps
 ```./owa.py mobile.twitter.com /cache/twitter.webapp --width 500```
 
 ```./owa.py app.loqui.im /loqui.webapp --width 300```
+
+License
+=
+<a href="http://en.wikipedia.org/wiki/WTFPL">WTFPL</a>
